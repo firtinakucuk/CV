@@ -1,0 +1,371 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[colorlinks = true,
+            linkcolor = red,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\hypersetup{pdfborder = 0 0 0}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Fırtına Küçük} \\ \vspace{1pt}
+    \small
+    \raisebox{-0.1\height}\faPhone\ +353 89 492 9528 \& +90 539 343 4946 ~
+    \href{mailto:firtina.kucuk@ucdconnect.ie}{\faEnvelope\ firtina.kucuk@ucdconnect.ie} ~ 
+    \href{mailto:fkucuk@ku.edu.tr}{\faEnvelope\ fkucuk@ku.edu.tr} ~ 
+    \vspace{-8pt}
+\end{center}
+
+
+% -----------Summary-----------
+%\section{Objective}
+%  \small{Enter your objective here}
+%\vspace{-12pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College Dublin, Dublin, Ireland }{September 2019 -- 2023}
+      {Ph.D. in Mathematics - Passed the viva and will graduate before September.}{}
+      %leave a line after this
+      
+      %\small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+      
+    \resumeSubheading
+      {Koç University, İstanbul, Turkey}{September 2017 -- August 2019}
+      {M.Sc. in Mathematics}{GPA: 3.92/4.00}
+      %leave a line after this
+      
+      %\small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
+
+      \resumeSubheading
+      {Koç University, İstanbul, Turkey}{September 2012 -- June 2017}
+      {B.Sc. in Mathematics \& B.Sc. in Computer Engineering (Double Major)}{GPA: 3.33/4.00}
+
+      \resumeSubheading
+      {İstanbul University State Conservatory, İstanbul, Turkey}{2004 -- 2013 \& 2014 -- 2016}
+      {Part-Time Piano Department, Advance Level \& Two-year Masterclass}{}
+
+      
+  \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College Dublin}{September 2019 -- May 2023}
+      {Tutor (Tutorials \& Grading)}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem {\textbf{Spring 2023: }MATH10240 (Mathematics for Agriculture II)}
+        \resumeItem {\textbf{Autumn 2022: }MATH00010 (Introduction to Mathematics)}
+        \resumeItem {\textbf{Spring 2022: }MATH10240 (Mathematics for Agriculture II)}
+        \resumeItem {\textbf{Autumn 2021: }MST00050 (Mathematics: An Introduction) / MATH00010 (Introduction to Mathematics)}
+        \resumeItem {\textbf{Spring 2021: }MATH10240 (Mathematics for Agriculture II)}
+        \resumeItem {\textbf{Autumn 2020: }MST00050 (Mathematics: An Introduction)}
+        \resumeItem {\textbf{Spring 2020: }MATH10240 (Mathematics for Agriculture II) \& MATH10210 (Foundations of Maths for Computer Science I)}
+        \resumeItem {\textbf{Autumn 2019: }MST00050 (Mathematics: An Introduction) \& MATH10130 (Intro to Analysis for Economics and Finance)}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Koç University}{Spring 2017 -- Spring 2019}
+      {Teaching Assistant (Problem Sessions \& Grading \& Invigilation)}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {\textbf{Spring 2019: }Math 401 (Complex Analysis) \& Math 104 (Discrete Mathematics)}
+        \resumeItem {\textbf{Autumn 2018: }Math 204 (Differential Equations) \& Math 103 (Introduction to Abstract Mathematics)}
+        \resumeItem {\textbf{Spring 2018: }Math 204 (Differential Equations) \& Math 401 (Complex Analysis)}
+        \resumeItem {\textbf{Autumn 2017: }Math 204 (Differential Equations) \& Math 301 (Real Analysis I)}
+        \resumeItem {\textbf{Spring 2017: }Math 203 (Multivariable Calculus)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Koç University \& Stanford University}{Summer 2017}
+      {Section Leader at CS-Bridge Program}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {CS-Bridge was a two-week summer school for programming aimed for high school students. The summer school was organized by Stanford University (Prof. Nick McKeown and colleagues) and it took place at Koç University.}
+        \resumeItem {Section leaders held discussion \& lab sessions, provided mentoring to a section of 8 students.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Koç University Office of Learning and Teaching (KOLT)}{Spring 2017}
+      {Tutor at KOLT (individual tutorials)}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem{KOLT Tutoring Center provides free individual tutorials to the Koç University students.}
+        \resumeItem {Tutored Math 206 (Abstract Algebra II -- Galois Theory) module.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University College Dublin}{Autumn 2019 -- Summer 2023}
+      {Doctoral Thesis, Mathematics}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem {Supervised by Assoc. Prof. K\^{a}zım Büyükboduk}
+        \resumeItem {Thesis Title: Iwasawa Theory of Symmetric Rankin-Selberg Product of Modular Forms and Applications}
+        \resumeItem {Passed the viva on 10 July 2023.}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Koç University}{Autumn 2017 -- Summer 2019}
+      {Master Thesis}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {Supervised by Prof. Varga Kalantarov}
+        \resumeItem {Thesis Title: Global Behaviour of Solutions to Nonlinear Damped Wave Equations}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Koç University}{Spring 2017}
+      {Senior Design Project, Computer Engineering}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {Supervised by Prof. Deniz Yüret and Erenay Dayanık}
+        \resumeItem {A web interface was built with NodeJS \& React for the VQA (Visual Question Answering) models trained by Erenay Dayanık.}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Koç University}{Autumn 2016}
+      {Independent Study, Mathematics}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {Supervised by Prof. Varga Kalantarov}
+        \resumeItem {The article of H. A. Levine about blow-up of solutions to nonlinear parabolic equations was investigated.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+\section{Other Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vertigo Games LTD.}{Summer 2016}
+      {Intern at Game Development Department}{İstanbul}
+      \resumeItemListStart
+        \resumeItem {Compulsory internship for Computer Engineering degree (20 workdays)}
+        \resumeItem {Tasks: Simple mobile game with Unity Game Engine}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Betek Color Industry Co.}{Summer 2015}
+      {Intern at IT Department}{İstanbul}
+      \resumeItemListStart
+        \resumeItem {Compulsory internship for Computer Engineering degree (20 workdays)}
+        \resumeItem {Tasks: Mini projects with SAP’s ABAP programming language}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+%-----------Technical Skilss-----------
+\section{Skills and Interests}
+ \begin{itemize}[leftmargin=0.1in, label={}]
+    \small{\item{
+     \textbf{Research Interests}{: Algebraic Number Theory, Arithmetic Geometry, Iwasawa Theory} \\
+     \textbf{Languages}{: Turkish (mother tongue), English (fluent), German (beginner level)} \\
+     \textbf{Computer \& Programming Skills}{: Holding a Double Major Degree in Computer Engineering. Special interest in Front End Web Development with React \& Backend Development with NodeJS.}\\
+     \textbf{Music Skills}{: Playing piano since 2002. Graduated from İstanbul University State Conservatory -- Piano Department (Part Time -- Advanced Level) in 2013. Also graduated from two-year masterclass of the same conservatory (2014-2016).}\\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------Technical Skilss-----------
+\section{Talks, Summer Schools, Conferences}
+  \resumeItemListStart
+    \resumeItem {Talk at Koç University (December 2022)}
+    \resumeItem {Talk at UCD Algebra and Number Theory Seminars (March 2022)}
+    \resumeItem {Mini Workshop: ``Set Theory and Ordinal Numbers'' (December 2016)}
+    \resumeItem {Mini Workshop: ``Constructing Numbers: From Natural Numbers to Real Numbers'' (March 2017)}
+    \resumeItem {Iwasawa 2023: in memory of John Coates (2023, University of Cambridge, Cambridge/UK, as attendee)}
+    \resumeItem {Explicit methods in automorphic forms and arithmetic geometry (2023, Trinity College Dublin, Dublin/Ireland, as attendee)}
+    \resumeItem {Arithmetic of L-functions (2023, ICMAT, Madrid/Spain, as attendee)}
+    \resumeItem {Introductory Workshop: Algebraic Cycles, L-Values, and Euler Systems (2023, MSRI, Berkeley/CA, as attendee)}
+    \resumeItem {Elliptic Curves and Modular Forms in Arithmetic Geometry (2022, Universit\`{a} degli Studi di Milano, Milan/Italy, as attendee)}
+    \resumeItem {School of Arithmetic Geometry (2022, University of Duisburg-Essen, Essen/Germany, as attendee)}
+    \resumeItem {Arizona Winter School on Modular Forms (2021, Online, as attendee)}
+    \resumeItem {Isaac Newton Institute for Mathematical Science, Swinnerton-Dyer Memorial (2021, Online, as attendee)}
+    \resumeItem {UCD Algebra and Number Theory Seminars (2020-2023, UCD, Dublin/Ireland, as attendee)}
+    \resumeItem {The 31st Journées Arithmétiques (2019, İstanbul University, İstanbul/Turkey, as attendee)}
+  %Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+  \resumeItemListEnd
+ \vspace{-16pt}
+
+
+
+% \section{Projects}
+%     \vspace{-6pt}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%           {\textbf{Project Title} $|$ \emph{Tool1, Tool2, Tool3, Tool4 \href{https://github.com/}{Git}}}{Month -- Month Year}
+%           \resumeItemListStart
+%             \resumeItem{ Write about your project experience.}
+%             \resumeItem{ Write about your project experience.}
+%           \resumeItemListEnd
+%           \vspace{-14pt}
+%     \resumeProjectHeading
+%           {\textbf{Project Title} $|$ \emph{Tool1, Tool2, Tool3, Tool4 \href{https://github.com/}{Git}}}{Month -- Month Year}
+%           \resumeItemListStart
+%             \resumeItem{ Write about your project experience.}
+%             \resumeItem{ Write about your project experience.}
+%           \resumeItemListEnd
+%           \vspace{-14pt}
+%     \resumeProjectHeading
+%           {\textbf{Project Title} $|$ \emph{Tool1, Tool2, Tool3, Tool4 \href{https://github.com/}{Git}}}{Month -- Month Year}
+%           \resumeItemListStart
+%             \resumeItem{ Write about your project experience.}
+%             \resumeItem{ Write about your project experience.}
+%           \resumeItemListEnd
+%           \vspace{-14pt}
+%     \resumeProjectHeading
+%           {\textbf{Project Title} $|$ \emph{Tool1, Tool2, Tool3, Tool4 \href{https://github.com/}{Git}}}{Month -- Month Year}
+%           \resumeItemListStart
+%             \resumeItem{ Write about your project experience.}
+%             \resumeItem{ Write about your project experience.}
+%           \resumeItemListEnd
+%           \vspace{-14pt}
+%     \resumeSubHeadingListEnd
+% \vspace{-3pt}
+
+
+%------------Publications-----------
+% \section{Publication}
+% \vspace{-6pt}
+%     \resumeSubHeadingListStart
+%     \resumeProjectHeading
+%     {\textbf{The Title of your paper} $|$ \emph{\href{https://www.researchgate.net}{Publication link}}}{Month Year}
+%     \resumeItemListStart
+%             \resumeItem{Write about your paper.}
+%             \resumeItem{Write about your paper.}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% \vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+\section{Honors and Awards}
+\textbf{Vehbi Koç High Honors Award} {: Awarded for attaining an outstanding academic performance and GPA/SPA over 3.50 (2014, 2015, 2017)}\\
+\textbf{Bronze Medal in National Mathematics Olympiads in Turkey} {(2011)}\\
+\textbf{Silver Medal in Antalya Mathematics Olympiads} {(2011)}\\
+\textbf{MEB İstanbul Science Olympiads Bronze Medal} {(2011)}\\
+\textbf{Sabancı University Mathematics Competition 3rd prize} {(2011)}\\
+\textbf{Bilgi University Cahit Arf Mathematics Days Honorable mention} {(2010)}
+
+
+\section{Scholarships}
+\textbf{UCD Ph.D. Advance Core Scheme} {2019-2023} \\
+\textbf{TUBITAK – Bideb 2210} {: Given during the master’s study, as a continuation of Bideb 2205 (2017-2019)}\\
+\textbf{TUBITAK – Bideb 2205} {: Given to the science major students who was in top 5000 nationwide in the university entrance exams (2012-2017)}\\
+\textbf{TEV (Turkish Education Foundation) High Success Scholarship} {(2012-2017)}\\
+\textbf{Koç University Semahat Arsel Scholarship} {: Given to the students who entered Koç University in the top 30 (2012-2017)}
+\end{document}
