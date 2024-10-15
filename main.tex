@@ -6,12 +6,16 @@
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
-\usepackage{enumitem}
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
 \usepackage[colorlinks = true,
             linkcolor = red,
             urlcolor  = blue,
             citecolor = blue,
             anchorcolor = blue]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
@@ -106,17 +110,15 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-
-
 \begin{document}
 
 \begin{center}
     {\Huge \scshape Fırtına Küçük} \\ \vspace{1pt}
+    {\scshape Teaching Fellow at Mary Immaculate College} \\ \vspace{1pt}
     \small
     \raisebox{-0.1\height}\faPhone\ +353 89 492 9528 \& +90 539 343 4946 ~
-    \href{mailto:firtina.kucuk@ucdconnect.ie}{\faEnvelope\ firtina.kucuk@ucdconnect.ie} ~ 
-    \href{mailto:fkucuk@ku.edu.tr}{\faEnvelope\ fkucuk@ku.edu.tr} ~ 
+    \href{mailto:firtina.kucuk@ucd.ie}{\faEnvelope\ firtina.kucuk@ucd.ie} ~ 
+    \href{mailto:firtinakucuk@gmail.com}{\faEnvelope\ firtinakucuk@gmail.com} ~ 
     \vspace{-8pt}
 \end{center}
 
@@ -129,11 +131,16 @@
 
 
 %-----------EDUCATION-----------
-\section{Education}
+\section{Education and Research}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University College Dublin, Dublin, Ireland }{September 2019 -- 2023}
-      {Ph.D. in Mathematics - Passed the viva and will graduate before September.}{}
+      {University College Dublin, Dublin, Ireland }{September 2019 -- October 2023}
+      {Ph.D. in Mathematics}{}
+      \resumeItemListStart
+        \resumeItem {Passed the viva on 10 July 2023 and the degree is awarded on 20 October 2023.}
+        \resumeItem {Supervised by Assoc. Prof. K\^{a}zım Büyükboduk}
+        \resumeItem {Thesis Title: Iwasawa Theory of Symmetric Rankin-Selberg Product of Modular Forms and Applications}
+    \resumeItemListEnd
       %leave a line after this
       
       %\small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
@@ -142,13 +149,21 @@
       {Koç University, İstanbul, Turkey}{September 2017 -- August 2019}
       {M.Sc. in Mathematics}{GPA: 3.92/4.00}
       %leave a line after this
-      
+      \resumeItemListStart
+        \resumeItem {Supervised by Prof. Varga Kalantarov}
+        \resumeItem {Thesis Title: Global Behaviour of Solutions to Nonlinear Damped Wave Equations}
+      \resumeItemListEnd
       %\small{\textbf{Coursework: Course-1, Course-2, Course-3, Course-4}}
 
       \resumeSubheading
       {Koç University, İstanbul, Turkey}{September 2012 -- June 2017}
       {B.Sc. in Mathematics \& B.Sc. in Computer Engineering (Double Major)}{GPA: 3.33/4.00}
-
+      \resumeItemListStart
+      \resumeItem {Senior design project for Computer Engineering, supervised by Prof. Deniz Yüret and Erenay Dayanık}
+      \resumeItem {A web interface was built with NodeJS \& React for the VQA (Visual Question Answering) models trained by Erenay Dayanık.}
+        \resumeItem {Independent study, supervised by Prof. Varga Kalantarov}
+        \resumeItem {The article of H. A. Levine about blow-up of solutions to nonlinear parabolic equations was investigated.}
+      \resumeItemListEnd
       \resumeSubheading
       {İstanbul University State Conservatory, İstanbul, Turkey}{2004 -- 2013 \& 2014 -- 2016}
       {Part-Time Piano Department, Advance Level \& Two-year Masterclass}{}
@@ -157,95 +172,43 @@
   \resumeSubHeadingListEnd
 \vspace{-18pt}
 
-\section{Teaching Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University College Dublin}{September 2019 -- May 2023}
-      {Tutor (Tutorials \& Grading)}{Dublin, Ireland}
-      \resumeItemListStart
-        \resumeItem {\textbf{Spring 2023: }MATH10240 (Mathematics for Agriculture II)}
-        \resumeItem {\textbf{Autumn 2022: }MATH00010 (Introduction to Mathematics)}
-        \resumeItem {\textbf{Spring 2022: }MATH10240 (Mathematics for Agriculture II)}
-        \resumeItem {\textbf{Autumn 2021: }MST00050 (Mathematics: An Introduction) / MATH00010 (Introduction to Mathematics)}
-        \resumeItem {\textbf{Spring 2021: }MATH10240 (Mathematics for Agriculture II)}
-        \resumeItem {\textbf{Autumn 2020: }MST00050 (Mathematics: An Introduction)}
-        \resumeItem {\textbf{Spring 2020: }MATH10240 (Mathematics for Agriculture II) \& MATH10210 (Foundations of Maths for Computer Science I)}
-        \resumeItem {\textbf{Autumn 2019: }MST00050 (Mathematics: An Introduction) \& MATH10130 (Intro to Analysis for Economics and Finance)}
-%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
-    \resumeItemListEnd
-      
-    \resumeSubheading
-      {Koç University}{Spring 2017 -- Spring 2019}
-      {Teaching Assistant (Problem Sessions \& Grading \& Invigilation)}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem {\textbf{Spring 2019: }Math 401 (Complex Analysis) \& Math 104 (Discrete Mathematics)}
-        \resumeItem {\textbf{Autumn 2018: }Math 204 (Differential Equations) \& Math 103 (Introduction to Abstract Mathematics)}
-        \resumeItem {\textbf{Spring 2018: }Math 204 (Differential Equations) \& Math 401 (Complex Analysis)}
-        \resumeItem {\textbf{Autumn 2017: }Math 204 (Differential Equations) \& Math 301 (Real Analysis I)}
-        \resumeItem {\textbf{Spring 2017: }Math 203 (Multivariable Calculus)}
-    \resumeItemListEnd
+\bibliographystyle{utphys}
+ \nobibliography*
+ \section{Articles and Preprints}
+ \begin{enumerate}
+  \item \bibentry{kucuk2023factorization} (submitted)
+ \end{enumerate}
+ \nobibliography{references}
 
-    \resumeSubheading
-      {Koç University \& Stanford University}{Summer 2017}
-      {Section Leader at CS-Bridge Program}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem {CS-Bridge was a two-week summer school for programming aimed for high school students. The summer school was organized by Stanford University (Prof. Nick McKeown and colleagues) and it took place at Koç University.}
-        \resumeItem {Section leaders held discussion \& lab sessions, provided mentoring to a section of 8 students.}
-    \resumeItemListEnd
+\section{Talks, Summer Schools, Conferences}
+  \resumeItemListStart
+    \resumeItem {Upcoming Talk: ``Factorization of algebraic $p$-adic Rankin-Selberg $L$-functions'' at ICMAT (Madrid, Spain, November 2024)}
+    \resumeItem {Upcoming Talk: ``Factorization of algebraic $p$-adic Rankin-Selberg $L$-functions'' at Mary Immaculate College (Tipperary, Ireland, October 2024)}
+    \resumeItem {Talk: ``Factorization of algebraic $p$-adic Rankin-Selberg $L$-functions'' at FGC-HRI-IPM Number Theory Seminars (online, April 2024)}
+    \resumeItem{Poster Presentation: "Factorization of Algebraic $p$-adic $L$-functions of Adjoint
+    Representations of Coleman Families" at the Conference: Modular Forms, L-functions, and Eigenvarieties (ENS, Paris, June 2024)}
+    \resumeItem {Talk: ``Factorization of algebraic $p$-adic Rankin-Selberg $L$-functions'' at FGC-HRI-IPM Number Theory Seminars (online, April 2024)}
+    \resumeItem {Talk: ``Factorization of algebraic $p$-adic $L$-functions of Rankin-Selberg products'' at Ottawa/Carleton Number Theory Seminar (online, March 2024)}
+    \resumeItem {Talk: ``Factorization of $p$-adic $L$-functions: Towards the $\theta$-critical case'' at UCD Algebra and Number Theory Seminars (November 2023)}
+    \resumeItem {Talk: ``Factorization of Algebraic $p$-adic $L$-functions Attached to Adjoint Representations of Coleman Families'' at Koç University (December 2022)}
+    \resumeItem {Talk: ``Factorization of Algebraic $p$-adic $L$-functions Attached to Adjoint Representations of Coleman Families'' at UCD Algebra and Number Theory Seminars (March 2022)}
+    \resumeItem {Mini Workshop: ``Set Theory and Ordinal Numbers'' at Koç University (December 2016)}
+    \resumeItem {Mini Workshop: ``Constructing Numbers: From Natural Numbers to Real Numbers'' at Koç University (March 2017)}
+    %\resumeItem {Iwasawa 2023: in memory of John Coates (2023, University of Cambridge, Cambridge/UK, as attendee)}
+    %\resumeItem {Explicit methods in automorphic forms and arithmetic geometry (2023, Trinity College Dublin, Dublin/Ireland, as attendee)}
+    %\resumeItem {Arithmetic of L-functions (2023, ICMAT, Madrid/Spain, as attendee)}
+    %\resumeItem {Introductory Workshop: Algebraic Cycles, L-Values, and Euler Systems (2023, MSRI, Berkeley/CA, as attendee)}
+    %\resumeItem {Elliptic Curves and Modular Forms in Arithmetic Geometry (2022, Universit\`{a} degli Studi di Milano, Milan/Italy, as attendee)}
+    %\resumeItem {School of Arithmetic Geometry (2022, University of Duisburg-Essen, Essen/Germany, as attendee)}
+    %\resumeItem {Arizona Winter School on Modular Forms (2021, Online, as attendee)}
+    %\resumeItem {Isaac Newton Institute for Mathematical Science, Swinnerton-Dyer Memorial (2021, Online, as attendee)}
+    %\resumeItem {UCD Algebra and Number Theory Seminars (2020-2023, UCD, Dublin/Ireland, as attendee)}
+    %\resumeItem {The 31st Journées Arithmétiques (2019, İstanbul University, İstanbul/Turkey, as attendee)}
+  %Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+  \resumeItemListEnd
+ \vspace{-16pt}
 
-    \resumeSubheading
-      {Koç University Office of Learning and Teaching (KOLT)}{Spring 2017}
-      {Tutor at KOLT (individual tutorials)}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem{KOLT Tutoring Center provides free individual tutorials to the Koç University students.}
-        \resumeItem {Tutored Math 206 (Abstract Algebra II -- Galois Theory) module.}
-    \resumeItemListEnd
-  \resumeSubHeadingListEnd
-\vspace{-16pt}
-% adjust vscape based on the space you want to leave between each section.
-
-\section{Research Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {University College Dublin}{Autumn 2019 -- Summer 2023}
-      {Doctoral Thesis, Mathematics}{Dublin, Ireland}
-      \resumeItemListStart
-        \resumeItem {Supervised by Assoc. Prof. K\^{a}zım Büyükboduk}
-        \resumeItem {Thesis Title: Iwasawa Theory of Symmetric Rankin-Selberg Product of Modular Forms and Applications}
-        \resumeItem {Passed the viva on 10 July 2023.}
-%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
-    \resumeItemListEnd
-      
-    \resumeSubheading
-      {Koç University}{Autumn 2017 -- Summer 2019}
-      {Master Thesis}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem {Supervised by Prof. Varga Kalantarov}
-        \resumeItem {Thesis Title: Global Behaviour of Solutions to Nonlinear Damped Wave Equations}
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {Koç University}{Spring 2017}
-      {Senior Design Project, Computer Engineering}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem {Supervised by Prof. Deniz Yüret and Erenay Dayanık}
-        \resumeItem {A web interface was built with NodeJS \& React for the VQA (Visual Question Answering) models trained by Erenay Dayanık.}
-    \resumeItemListEnd
-    
-    \resumeSubheading
-      {Koç University}{Autumn 2016}
-      {Independent Study, Mathematics}{İstanbul, Turkey}
-      \resumeItemListStart
-        \resumeItem {Supervised by Prof. Varga Kalantarov}
-        \resumeItem {The article of H. A. Levine about blow-up of solutions to nonlinear parabolic equations was investigated.}
-    \resumeItemListEnd
-
-  \resumeSubHeadingListEnd
-\vspace{-16pt}
-% adjust vscape based on the space you want to leave between each section.
-
-
-\section{Other Work Experience}
+ \section{Non-Academic Work Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Vertigo Games LTD.}{Summer 2016}
@@ -265,41 +228,83 @@
       
   \resumeSubHeadingListEnd
 \vspace{-16pt}
-% adjust vscape based on the space you want to leave between each section.
-
-
-%-----------Technical Skilss-----------
 \section{Skills and Interests}
  \begin{itemize}[leftmargin=0.1in, label={}]
     \small{\item{
      \textbf{Research Interests}{: Algebraic Number Theory, Arithmetic Geometry, Iwasawa Theory} \\
      \textbf{Languages}{: Turkish (mother tongue), English (fluent), German (beginner level)} \\
-     \textbf{Computer \& Programming Skills}{: Holding a Double Major Degree in Computer Engineering. Special interest in Front End Web Development with React \& Backend Development with NodeJS.}\\
+     \textbf{Computer \& Programming Skills}{: Holding a Double Major Degree in Computer Engineering. GitHub: https://github.com/firtinakucuk. Experience with Python, Javascript, Java, MATLAB, MAGMA Computer Algebra System, LaTeX, C, C\# (Unity), SAP-ABAP. Special interest in Front End Web Development with React \& Backend Development with NodeJS. I built the Koç University-Math204 page for 2018-2019 and 2019-2020 academic year using React: \url{http://home.ku.edu.tr/~math204/} (GitHub link: \url{https://github.com/firtinakucuk/Math204-Webpage})}\\
      \textbf{Music Skills}{: Playing piano since 2002. Graduated from İstanbul University State Conservatory -- Piano Department (Part Time -- Advanced Level) in 2013. Also graduated from two-year masterclass of the same conservatory (2014-2016).}\\
     }}
  \end{itemize}
  \vspace{-16pt}
 
+\section{Teaching Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Mary Immaculate College - Thurles}{August 2024 -- November 2024 (Anticipated)}
+      {Teaching Fellow (Lectures \& Tutorials \& Labs)}{Tipperary, Ireland}
+      \resumeItemListStart
+        \resumeItem {MHP4738 - Computational Mathematics (SageMath, 3 Lectures 1 Tutorial)}
+        \resumeItem {MHP4731 - Elementary Number Theory (3 Lectures 1 Tutorial)}
+        
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+    \resumeSubheading
+      {University College Dublin}{September 2019 -- August 2024}
+      {Tutor (Tutorials \& Grading \& Invigilation)}{Dublin, Ireland}
+      \resumeItemListStart
+        \resumeItem{MST10030 - Linear Algebra I}
+        \resumeItem{MATH10220 - Foundations of Math for Computer Science II}
+        \resumeItem{MATH30400 - Further Groups and Rings (I also covered a few lectures)}
+        \resumeItem {MATH10240 - Mathematics for Agriculture II (Tutor for 5 consecutive years)}
+        \resumeItem {MATH10200 - Matrix Algebra}
+        \resumeItem{MATH00010/MST00050 - Introduction to Mathematics/Mathematics: An Introduction (Tutor for 5 consecutive years)} 
+        \resumeItem{MATH10310 - Calculus for Science} \resumeItem{MATH10430 - Intro Calculus Engineers(NUin)} 
+        \resumeItem{MATH20060 - Calculus of Several Variables}
+        \resumeItem{MATH10210 - Foundations of Maths for Computer Science I}
+        \resumeItem {MATH10130 - Intro to Analysis for Economics and Finance}
+%Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Koç University}{Spring 2017 -- Spring 2019}
+      {Teaching Assistant (Problem Sessions \& Grading \& Invigilation)}{İstanbul, Turkey}
+      \resumeItemListStart
+      \resumeItem{Math 104 - Discrete Mathematics}
+      \resumeItem{Math 103 - Introduction to Abstract Mathematics}
+      \resumeItem{Math 401 - Complex Analysis (For 2 consecutive years)}
+      \resumeItem{Math 204 - Differential Equations (For 2 consecutive years)} 
+      \resumeItem{Math 301 - Real Analysis I}  
+      \resumeItem{Math 203 - Multivatiable Calculus (During the last semester of my undergraduate)}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Koç University \& Stanford University}{Summer 2017}
+      {Section Leader at CS-Bridge Program}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem {CS-Bridge was a two-week summer school for programming aimed for high school students. The summer school was co-organized by Koç University and Stanford University (Assoc. Prof. Barış Bozkurt, Prof. Nick McKeown and their colleagues) and it took place at Koç University.}
+        \resumeItem {Section leaders held discussion \& lab sessions, provided mentoring to a section of 8 students.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Koç University Office of Learning and Teaching (KOLT)}{Spring 2017}
+      {Tutor at KOLT (individual tutorials)}{İstanbul, Turkey}
+      \resumeItemListStart
+        \resumeItem{KOLT Tutoring Center provides free individual tutorials to the Koç University students.}
+        \resumeItem {Tutored Math 206 (Abstract Algebra II -- Galois Theory) module.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+% adjust vscape based on the space you want to leave between each section.
+
+
+% adjust vscape based on the space you want to leave between each section.
+
+
 %-----------Technical Skilss-----------
-\section{Talks, Summer Schools, Conferences}
-  \resumeItemListStart
-    \resumeItem {Talk at Koç University (December 2022)}
-    \resumeItem {Talk at UCD Algebra and Number Theory Seminars (March 2022)}
-    \resumeItem {Mini Workshop: ``Set Theory and Ordinal Numbers'' (December 2016)}
-    \resumeItem {Mini Workshop: ``Constructing Numbers: From Natural Numbers to Real Numbers'' (March 2017)}
-    \resumeItem {Iwasawa 2023: in memory of John Coates (2023, University of Cambridge, Cambridge/UK, as attendee)}
-    \resumeItem {Explicit methods in automorphic forms and arithmetic geometry (2023, Trinity College Dublin, Dublin/Ireland, as attendee)}
-    \resumeItem {Arithmetic of L-functions (2023, ICMAT, Madrid/Spain, as attendee)}
-    \resumeItem {Introductory Workshop: Algebraic Cycles, L-Values, and Euler Systems (2023, MSRI, Berkeley/CA, as attendee)}
-    \resumeItem {Elliptic Curves and Modular Forms in Arithmetic Geometry (2022, Universit\`{a} degli Studi di Milano, Milan/Italy, as attendee)}
-    \resumeItem {School of Arithmetic Geometry (2022, University of Duisburg-Essen, Essen/Germany, as attendee)}
-    \resumeItem {Arizona Winter School on Modular Forms (2021, Online, as attendee)}
-    \resumeItem {Isaac Newton Institute for Mathematical Science, Swinnerton-Dyer Memorial (2021, Online, as attendee)}
-    \resumeItem {UCD Algebra and Number Theory Seminars (2020-2023, UCD, Dublin/Ireland, as attendee)}
-    \resumeItem {The 31st Journées Arithmétiques (2019, İstanbul University, İstanbul/Turkey, as attendee)}
-  %Based on the number of point you want to add add the "\resumeItem" for each point you want to add.
-  \resumeItemListEnd
- \vspace{-16pt}
+
+%-----------Technical Skilss-----------
 
 
 
@@ -368,4 +373,17 @@
 \textbf{TUBITAK – Bideb 2205} {: Given to the science major students who was in top 5000 nationwide in the university entrance exams (2012-2017)}\\
 \textbf{TEV (Turkish Education Foundation) High Success Scholarship} {(2012-2017)}\\
 \textbf{Koç University Semahat Arsel Scholarship} {: Given to the students who entered Koç University in the top 30 (2012-2017)}
+
+% \section{References}
+% \resumeSubHeadingListStart
+%   \resumeSubheading
+%       {Kâzım Büyükboduk}{University College Dublin}
+%       {kazim.buyukboduk@ucd.ie}{}
+%   \resumeSubheading
+%       {Antonio Lei}{University of Ottawa}
+%       {alantoniolei@gmail.com}{}
+%   \resumeSubheading
+%       {Matteo Longo}{Universita di Padova}
+%       {mlongo@math.unipd.it}{matteo.longo@unipd.it}
+% \resumeSubHeadingListEnd
 \end{document}
